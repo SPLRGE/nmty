@@ -12,18 +12,19 @@ const { data } = await useAsyncData('landing_page', () => {
 })
 
 definePageMeta({
-  title: () => `${data.value?.title} - NMTY`,
+  title: `${data.value?.title ?? 'Accueil'} - NMTY`,
 })
 </script>
 
 <template>
-  <div class="flex flex-col items-center justify-around px-4 py-48 font-changa lg:flex-row lg:px-60 xl:px-72">
-    <div class="flex flex-col">
-      <p class="font-changa-one text-6xl font-bold uppercase lg:text-8xl">{{ data?.title }}</p>
-      <p class="w-4/5">{{ data?.sub_title }}</p>
-    </div>
-    <HomeBook class="hidden xl:block" />
-  </div>
+  <HeroLanding>
+    <template #left>
+      <HeroText :title="data?.title ?? 'NMTY'" :text="data?.sub_title ?? 'Bienvenue sur NMTY.'" />
+    </template>
+    <template #right>
+      <HomeBook class="hidden xl:block" />
+    </template>
+  </HeroLanding>
 </template>
 
 <style scoped></style>
