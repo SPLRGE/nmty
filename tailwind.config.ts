@@ -36,6 +36,7 @@ export default <Partial<Config>>{
         'changa-one': ['Changa One', 'sans-serif'],
         changa: ['Changa', 'sans-serif'],
         lalezar: ['Lalezar', 'cursive'],
+        nmty: ['nmty', 'serif'],
       },
     },
   },
