@@ -24,9 +24,8 @@ export default defineNuxtConfig({
   },
 
   routeRules: {
-    // '/**': { swr: true },
+    '/**': { swr: true },
     '/admin': { redirect: 'https://cms.nmty.fr' },
-    '/assets/**': { proxy: 'https://cms.nmty.fr/assets/**' },
   },
 
   colorMode: {
