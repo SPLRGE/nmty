@@ -4,9 +4,9 @@
   <HeroLanding>
     <template #left>
       <div class="font-nmty">
-        Un grand sage à dit un jour “ Lorsque les démon et les anges se mélangeront, l’univers qui aura perdu c’est
-        dernier rempart alors 7 flamme se réveilleront pour protéger ce qui aime né de l’alliance du yin et du yong,
-        leur sang sera celui des 7 "
+        Un grand sage a dit un jour "Lorsque, les demons et les anges se melangeront, l’univers qui aura perdu, c’est.
+Dernier rempart alors 7 flammes se reveilleront pour proteger ce qui aime ne de l’alliance du yin et du yang.
+Leur sang sera celui des 7."
       </div>
     </template>
   </HeroLanding>
