@@ -11,8 +11,11 @@ const { data } = await useAsyncData('landing_page', () => {
   })
 })
 
-definePageMeta({
-  title: `${data.value?.title ?? 'Accueil'} - NMTY`,
+useSeoMeta({
+  title: data.value?.title,
+  description: data.value?.sub_title,
+  applicationName: 'NMTY',
+  keywords: 'NMTY, nmty, manga, anime, streaming, vostfr, vf, gratuit, illimité, livre, application, japon, france',
 })
 </script>
 
