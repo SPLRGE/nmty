@@ -1,4 +1,7 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+useSeoMeta({
+  title: 'Manuscrit 7'
+})</script>
 
 <template>
   <HeroLanding>
