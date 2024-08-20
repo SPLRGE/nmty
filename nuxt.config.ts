@@ -1,6 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
+
   modules: [
     '@nuxt/fonts',
     '@nuxt/image',
@@ -38,4 +39,10 @@ export default defineNuxtConfig({
       pathPrefix: false,
     },
   ],
+
+  compatibilityDate: '2024-08-20',
+
+  future: {
+    compatibilityVersion: 4
+  }
 })
