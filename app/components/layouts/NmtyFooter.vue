@@ -48,7 +48,7 @@ const socialNetworks = [
       </p>
     </div>
 
-    <div class="flex w-full items-start list-outside list-none flex-col justify-around pl-0 space-y-0 md:flex-row lg:pl-12">
+    <div class="flex w-full list-outside list-none flex-col items-start justify-around space-y-0 pl-0 md:flex-row lg:pl-12">
       <NmtyList title="Liens utiles" :links="utilityLinks" />
       <NmtyList title="Réseaux sociaux" :links="socialNetworks" />
     </div>

@@ -10,6 +10,7 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
     '@nuxtjs/robots',
     'nuxt-directus',
+    "@nuxt/eslint"
   ],
 
   directus: {

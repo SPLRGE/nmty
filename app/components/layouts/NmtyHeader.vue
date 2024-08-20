@@ -21,7 +21,7 @@ watch(router, () => {
       </div>
       <div class="space-x-4">
         <button
-          class="h-12 w-12 rounded-full hover:bg-gray-200 dark:hover:bg-zinc-800"
+          class="size-12 rounded-full hover:bg-gray-200 dark:hover:bg-zinc-800"
           @click="
             () => {
               colorMode.preference = colorMode.value === 'light' ? 'dark' : 'light'
@@ -47,7 +47,7 @@ watch(router, () => {
       <div>
         <NmtyLogo />
       </div>
-      <button class="h-12 w-12 rounded-full hover:bg-gray-200 dark:hover:bg-zinc-800">
+      <button class="size-12 rounded-full hover:bg-gray-200 dark:hover:bg-zinc-800">
         <Icon :name="showMenu ? 'mdi:close' : 'mdi:menu'" class="text-2xl" @click="showMenu = !showMenu" />
       </button>
     </header>
@@ -60,7 +60,7 @@ watch(router, () => {
       <NuxtLink to="/login" class="link">Connexion</NuxtLink>
       <NuxtLink to="/register" class="link">Inscription</NuxtLink>
       <button
-        class="h-12 w-12 rounded-full hover:bg-gray-200 dark:hover:bg-zinc-800"
+        class="size-12 rounded-full hover:bg-gray-200 dark:hover:bg-zinc-800"
         @click="
           () => {
             colorMode.preference = colorMode.value === 'light' ? 'dark' : 'light'

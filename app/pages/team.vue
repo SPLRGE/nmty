@@ -29,14 +29,16 @@ useSeoMeta({
   <div class="py-12 text-center">
     <h1 class="font-changa-one text-4xl md:text-6xl">Notre équipe</h1>
     <div class="mx-auto my-12 flex flex-wrap justify-center gap-4">
-      <div v-for="member in team" :key="member.id"
-        class="rounded-md group bg-gray-100 p-10 shadow-md dark:bg-zinc-800 hover:cursor-pointer relative box-border">
-        <div class="absolute -m-10 w-full h-full bg-black opacity-0 group-hover:opacity-80 rounded-md"></div>
-        <NuxtImg :src="getAvatar(member.avatar)" :alt="member.name"
-          class="mx-auto h-[100px] w-[100px] rounded-full md:h-[150px] md:w-[150px] lg:h-[200px] lg:w-[200px] group-hover:scale-105 transition-transform transition-duration-300" />
-        <div class="pt-2 flex flex-row justify-between items-center">
-          <p class="w text-right pr-2">{{ member.name }}</p>
-          <div class="w-1 h-1 bg-gray-400 rounded-full"></div>
+      <div
+v-for="member in team" :key="member.id"
+        class="group relative box-border rounded-md bg-gray-100 p-10 shadow-md hover:cursor-pointer dark:bg-zinc-800">
+        <div class="absolute -m-10 size-full rounded-md bg-black opacity-0 group-hover:opacity-80"/>
+        <NuxtImg
+:src="getAvatar(member.avatar)" :alt="member.name"
+          class="transition-duration-300 mx-auto size-[100px] rounded-full transition-transform group-hover:scale-105 md:size-[150px] lg:size-[200px]" />
+        <div class="flex flex-row items-center justify-between pt-2">
+          <p class="w pr-2 text-right">{{ member.name }}</p>
+          <div class="size-1 rounded-full bg-gray-400"/>
           <p class=" pl-2">{{ member.role }}</p>
         </div>
       </div>
